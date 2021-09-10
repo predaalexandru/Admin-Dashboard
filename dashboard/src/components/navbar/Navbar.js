@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import avatar from "../../assets/avatar.svg"
+import 'font-awesome/css/font-awesome.min.css';
 
 const Navbar = ({ sidebarOpen, openSidebar }) => {
     return (
@@ -15,6 +16,12 @@ const Navbar = ({ sidebarOpen, openSidebar }) => {
             <div className="navbar__right">
                 <a href="#">
                     <i className="fa fa-search"></i>
+                </a>
+                <a href="#">
+                    <i className="fa fa-clock-o"></i>
+                </a>
+                <a href="#">
+                   <img width="30" src={avatar} alt="avatar" />
                 </a>
             </div>
         </nav>
